@@ -1,0 +1,30 @@
+<div>
+    @if(reminder){
+    <table>
+        <thead>
+            <td>
+                <p>{{reminder.status}}</p>
+                <p>{{reminder.dateAdded}}</p>
+                <p>{{reminder.dateDone}}</p>
+            </td>
+            <td>
+                <p>{{reminder.about}}</p>
+            </td>
+
+        </thead>
+        <tfoot>
+            <td colspan="2">
+                <p>{{reminder.descrition}}</p>
+            </td>
+
+        </tfoot>
+    </table>
+    } @else {<p>Такого напоминания не существует</p>}
+
+    <div class="buttons">
+        @if(reminder) {
+        <button (click)="editReminder()">Редактировать</button>
+        }
+        <button routerLink="/">Назад</button>
+    </div>
+</div>

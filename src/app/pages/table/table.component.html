@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>Статус</th>
+        <th>Описание</th>
+        <th>Дата создания</th>
+        <th>Дата выполнения</th>
+    </tr>
+    @if (data) {
+        @for (item of data; track $index) {
+    <tr (dblclick)="goDeep(item.about)" class="row">
+        <td>{{item.status}}</td>
+        <td>{{item.about}}</td>
+        <td>{{item.dateAdded}}</td>
+        <td>{{item.dateDone}}</td>
+    </tr>
+    }} @else {
+    <tr col>
+        <td colspan="4" style="text-align: center;">Список напоминаний пуст...</td>
+    </tr>
+    }
+
+</table>
