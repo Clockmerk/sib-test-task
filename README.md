@@ -1,7 +1,7 @@
 ## Purpose of the application
 Тестовый проект таблицы напоминаний
 <br>
-
+Ссылка на [сайт](https://sib-test-task.vercel.app/)
 
 ## Getting Started
 ```
